@@ -1,0 +1,1 @@
+npm install grunt grunt-contrib-concat grunt-contrib-copy grunt-contrib-jshint grunt-contrib-nodeunit grunt-contrib-uglify grunt-contrib-watch grunt-exec grunt-jscs grunt-jsdoc grunt-karma jasmine karma karma-jasmine karma-phantomjs-launcher phantomjs --save-dev

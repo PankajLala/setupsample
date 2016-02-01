@@ -1,0 +1,12 @@
+Seed based on http://manuel.kiessling.net/2014/06/09/creating-a-useful-angularjs-project-structure-and-toolchain/
+All credit to the author
+
+# serverdep.bat - As you can see, these are all development dependencies; none of these packages are needed to run the actual application. We are going to pull in the local grunt module and several of its plugins, and we make Karma, the AngularJS test runner, available. Satisfying these dependencies allows us to use the Grunt command line interface on this project and enables us to run Jasmine test cases against the PhantomJS headless browser.
+# .bowerrc - since we are running behind company firewall
+# clientdep.bat - These are all dependencies which the application needs to actually run.
+# Also install karma-cli and then run karma init karma.conf.js to initiate the karma config file
+# Grunt support:
+  install package grunt-init globally
+  make sure that you have .grunt-init folder created under ~, where ~ on window machine was driver:\Users\user\. If no .grunt-init is present then create using command prompt, this folder will be used to hold the grunt templates. We will use one of such template to generate our gruntfile
+  we need to get the grunt templates from github, for example to start will a basic gruntfile we are using grunt-init-gruntfile template. Clone this to the .grunt-init folder
+  to generate gruntfile run the command "grunt-init grunt-init-gruntfile", you will be prompted for some configuration options and the gruntfile will be generated.
